@@ -1,7 +1,7 @@
 import React from "react";
-import Text from "./text";
-import Companies from "./companies";
-import People from "./people";
+import Text from "./text/text";
+import Companies from "./companies/companies";
+import People from "./people/people";
 
 export default function Callout() {
   return (
