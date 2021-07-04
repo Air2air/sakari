@@ -1,0 +1,17 @@
+$header-height: 90px;
+
+.container-fluid {
+  background: red !important;
+}
+.navbar {
+  width: 100%;
+  justify-content: between;
+  align-items: center;
+  height: $header-height;
+  background: red !important;
+}
+
+.headerLogo {
+  // height: 40px;
+  width: 160px;
+}
