@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Header from '../components/Header'
+import Header from '../components/header'
+import Callout from '../components/callout'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -17,6 +18,9 @@ export default function Home() {
 
       <div className={styles.container}>
       <main className={styles.main}>
+
+
+        <Callout />
 
 
         <div className={styles.grid}>

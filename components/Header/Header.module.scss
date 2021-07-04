@@ -1,17 +1,27 @@
-$header-height: 90px;
+$navbar-height: 80px;
 
-.container-fluid {
-  background: red !important;
-}
-.navbar {
-  width: 100%;
-  justify-content: between;
-  align-items: center;
-  height: $header-height;
-  background: red !important;
+nav.navbar {
+  height: $navbar-height;
+  .container {
+    height: $navbar-height;
+    a.nav-link {
+      font-weight: 300;
+      letter-spacing: 0.02em;
+      font-size: 1.1em;
+      text-decoration: none;
+    }
+  }
 }
 
-.headerLogo {
-  // height: 40px;
-  width: 160px;
+nav.navbar {
+  background: none;
 }
+
+// nav.navbar {
+//   background: gold;
+//   .container {
+//     background: red;
+//     .nav-item {
+//     }
+//   }
+// }
