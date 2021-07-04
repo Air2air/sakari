@@ -1,9 +1,10 @@
 $people-size: 100px;
 
 .people_container {
-  width:30%;
-  display:flex;
+  width: 30%;
+  display: flex;
   flex-wrap: wrap;
+  height: auto;
   div {
     width: $people-size;
     height: $people-size;
@@ -53,5 +54,11 @@ $people-size: 100px;
       background-position-x: 1940px;
       background-position-y: 1020px;
     }
+  }
+}
+
+.people_container {
+  // background: gold;
+  div {
   }
 }

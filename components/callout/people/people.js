@@ -1,37 +1,79 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styles from "./People.module.scss";
 
 const People = () => {
-  const [count, setCount] = useState(1);
 
+  /* Entry animation */
   const controls = useAnimation();
-
   useEffect(() => {
     controls.start((i) => ({
-      opacity: 1,
       scale: 1,
-      transition: { delay: i * 0.3 },
+      transition: { duration: 1, delay: i * 0.1, type: "spring" },
     }));
   }, []);
 
+  const initialScale = 0;
+
   return (
     <>
-      <div onClick={() => setCount(count + 1)}>{count}</div>
       <motion.div
         className={styles.people_container}
-        onClick={() => setCount(count + 1)}
       >
-        {count}
-        <motion.div custom={0} animate={controls} className={styles.people_1} />
-        <motion.div custom={1} animate={controls} className={styles.people_9} />
-        <motion.div custom={2} animate={controls} className={styles.people_3} />
-        <motion.div custom={3} animate={controls} className={styles.people_4} />
-        <motion.div custom={4} animate={controls} className={styles.people_5} />
-        <motion.div custom={5} animate={controls} className={styles.people_6} />
-        <motion.div custom={6} animate={controls} className={styles.people_7} />
-        <motion.div animate={controls} className={styles.people_8} />
-        <motion.div animate={controls} className={styles.people_9} />
+        <motion.div
+          initial={{ scale: initialScale }}
+          custom={0}
+          animate={controls}
+          className={styles.people_1}
+        />
+        <motion.div
+          initial={{ scale: initialScale }}s
+          custom={7}
+          animate={controls}
+          className={styles.people_9}
+        />
+        <motion.div
+          initial={{ scale: initialScale }}
+          custom={2}
+          animate={controls}
+          className={styles.people_3}
+        />
+        <motion.div
+          initial={{ scale: initialScale }}
+          custom={3}
+          animate={controls}
+          className={styles.people_4}
+        />
+        <motion.div
+          initial={{ scale: initialScale }}
+          custom={8}
+          animate={controls}
+          className={styles.people_5}
+        />
+        <motion.div
+          initial={{ scale: initialScale }}
+          custom={5}
+          animate={controls}
+          className={styles.people_6}
+        />
+        <motion.div
+          initial={{ scale: initialScale }}
+          custom={6}
+          animate={controls}
+          className={styles.people_7}
+        />
+        <motion.div
+          initial={{ scale: initialScale }}
+          custom={4}
+          animate={controls}
+          className={styles.people_8}
+        />
+        <motion.div
+          initial={{ scale: initialScale }}
+          custom={2}
+          animate={controls}
+          className={styles.people_9}
+        />
       </motion.div>
     </>
   );

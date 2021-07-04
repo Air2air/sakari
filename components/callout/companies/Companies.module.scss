@@ -8,6 +8,7 @@ $company-size: 4vw;
     width: $company-size;
     height: $company-size;
     background-size: contain;
+    background-position: center;
     margin:0 10px 10px 0;
     &.company_1 {
       background-image: url(./../../../public/company/1.jpg);
