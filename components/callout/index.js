@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Text from "./text/text";
 import Companies from "./companies/companies";
 import People from "./people/people";
+import styles from "./Callout.module.scss";
 
-export default function Callout() {
+const Callout = () => {
   return (
-    <div className="callout d-flex justify-content-between align-items-center w-100">
-      <Companies />
+    <>
       <Text />
-      <People />
-    </div>
+      <div className={styles.callout}>
+        <People />
+        <Companies />
+      </div>
+    </>
   );
-}
+};
+
+export default Callout;
