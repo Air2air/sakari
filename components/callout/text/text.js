@@ -1,8 +1,23 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import styles from "./Text.module.scss";
 
-export default function Text() {
+const Text = () => {
+  /* Entry animation */
+  // const controls = useAnimation();
+  // useEffect(() => {
+  //   controls.start((i) => ({
+  //     transition: { delay: i * 0.1 },
+  //   }));
+  // }, []);
+
+  const globalSettings = (i) => ({
+    scale: 1,
+    transition: { duration: 1, delay: i * 0.3, type: "spring" },
+  });
+
+  const initialScale = 0;
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -12,10 +27,40 @@ export default function Text() {
       transition={{ duration: 0.15 }}
       className={styles.text_container}
     >
-      <div className={styles.text}>Text</div>
-      <div className={styles.everybody}>everybody</div>
-      <div className={styles.from}>from</div>
-      <div className={styles.everything}>everything</div>
+      <motion.div
+        initial={{ scale: initialScale }}
+        custom={0}
+        animate={globalSettings}
+        className={styles.company_1}
+      >
+        Text
+      </motion.div>
+      <motion.div
+        initial={{ scale: initialScale }}
+        custom={1}
+        animate={globalSettings}
+        className={styles.company_9}
+      >
+        Everybody
+      </motion.div>
+      <motion.div
+        initial={{ scale: initialScale }}
+        custom={2}
+        animate={globalSettings}
+        className={styles.company_1}
+      >
+        from
+      </motion.div>
+      <motion.div
+        initial={{ scale: initialScale }}
+        custom={3}
+        animate={globalSettings}
+        className={styles.company_9}
+      >
+        Everything
+      </motion.div>
     </motion.div>
   );
-}
+};
+
+export default Text;
