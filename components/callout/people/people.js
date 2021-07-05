@@ -3,7 +3,6 @@ import { motion, useAnimation } from "framer-motion";
 import styles from "./People.module.scss";
 
 const People = () => {
-
   /* Entry animation */
   const controls = useAnimation();
   useEffect(() => {
@@ -17,9 +16,7 @@ const People = () => {
 
   return (
     <>
-      <motion.div
-        className={styles.people_container}
-      >
+      <div className={styles.people_container}>
         <motion.div
           initial={{ scale: initialScale }}
           custom={0}
@@ -27,7 +24,8 @@ const People = () => {
           className={styles.people_1}
         />
         <motion.div
-          initial={{ scale: initialScale }}s
+          initial={{ scale: initialScale }}
+          s
           custom={7}
           animate={controls}
           className={styles.people_9}
@@ -74,7 +72,7 @@ const People = () => {
           animate={controls}
           className={styles.people_9}
         />
-      </motion.div>
+      </div>
     </>
   );
 };

@@ -9,20 +9,20 @@ import { motion } from "framer-motion";
 import styles from "./Header.module.scss";
 
 const initialOpacity = 0.6;
+const iconColor = "rgb(35, 134, 247)"
 
 const Header = () => {
   return (
     <Navbar className={styles.navbar}>
-      <Container className="d-flex justify-content-around align-items-center">
-        <Link href="/allocation">
+      <Container className="d-flex justify-content-between">
+        <Link href="#">
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: initialOpacity }}
-            whileHover={{ scale: 1.07, opacity: 1 }}
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.07}}
             whileTap={{ scale: 1 }}
             transition={{ duration: 0.15 }}
           >
-            <AiFillHome size="2em" />
+            <AiFillHome size="2em" color={iconColor}/>
           </motion.div>
         </Link>
 
@@ -35,15 +35,14 @@ const Header = () => {
           <Image src={logo} alt="Sakari" width="140" height="40" />
         </motion.div>
 
-        <Link href="/">
+        <Link href="#">
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: initialOpacity }}
-            whileHover={{ scale: 1.05, opacity: 1 }}
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.07}}
             whileTap={{ scale: 1 }}
             transition={{ duration: 0.15 }}
           >
-            <FaUserAlt size="2em" />
+            <FaUserAlt size="2em" color={iconColor}/>
           </motion.div>
         </Link>
       </Container>

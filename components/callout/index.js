@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Text from "./text/text";
+import { TextLeft, TextRight } from "./text/text";
 import Companies from "./companies/companies";
 import People from "./people/people";
 import styles from "./Callout.module.scss";
@@ -7,10 +7,15 @@ import styles from "./Callout.module.scss";
 const Callout = () => {
   return (
     <>
-      <Text />
-      <div className={styles.callout}>
-        <People />
-        <Companies />
+      <div className="d-flex justify-content-around">
+        <div className="d-flex flex-column align-items-center w-50">
+          <TextLeft delayWord1={1} delayWord2={2}/>
+          <People delay={2}/>
+        </div>
+        <div className="d-flex flex-column align-items-center w-50">
+          <TextRight delayWord3={3} delayWord4={4}/>
+          <Companies delay={4}/>
+        </div>
       </div>
     </>
   );

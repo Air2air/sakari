@@ -1,14 +1,17 @@
-$company-size: 4vw;
+$company-size: 4.1vw;
 
 .company_container {
-  width: 30%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  height: auto;
+  margin: 0 40px;
   div {
     width: $company-size;
     height: $company-size;
     background-size: contain;
     background-position: center;
+    background-repeat:none;
     margin:0 10px 10px 0;
     &.company_1 {
       background-image: url(./../../../public/company/1.jpg);
