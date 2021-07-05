@@ -2,11 +2,6 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styles from "./Text.module.scss";
 
-/*  Text timings */
-// const delayWord1 = 1;
-// const delayWord2 = 1.5;
-// const delayWord3 = 2.5;
-// const delayWord4 = 3;
 
 const wordDuration = 0.3;
 

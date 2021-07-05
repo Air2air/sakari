@@ -9,12 +9,12 @@ const Callout = () => {
     <>
       <div className="d-flex justify-content-around">
         <div className="d-flex flex-column align-items-center w-50">
-          <TextLeft delayWord1={1} delayWord2={2}/>
-          <People delay={2}/>
+          <TextLeft delayWord1={1} delayWord2={1.5}/>
+          <People delay={1}/>
         </div>
         <div className="d-flex flex-column align-items-center w-50">
-          <TextRight delayWord3={3} delayWord4={4}/>
-          <Companies delay={4}/>
+          <TextRight delayWord3={3} delayWord4={3.5}/>
+          <Companies delay={2}/>
         </div>
       </div>
     </>

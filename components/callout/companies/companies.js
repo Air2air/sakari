@@ -1,20 +1,29 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styles from "./Companies.module.scss";
 
-const Companies = () => {
-  /* Entry animation */
-  const controls = useAnimation();
-  useEffect(() => {
-    controls.start((i) => ({
-      scale: 1,
-      transition: { duration: 0.4, delay: i * 0.1, type: "spring" },
-    }));
-  }, []);
+const Companies = (props) => {
+
+  const [show, setShow] = useState(false);
 
   const initialScale = 0;
 
-  return (
+  const controls = useAnimation();
+  controls.start((i) => ({
+    scale: 1,
+    transition: { duration: 0.4, delay: i * 0.1, type: "spring" },
+  }));
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, props.delay * 1000);
+  }, [show]);
+
+  if (!show) {
+    return null;
+  } else {
+    return (
     <>
       <motion.div
         initial={{ opacity: 0 }}
@@ -171,7 +180,8 @@ const Companies = () => {
         />
       </motion.div>
     </>
-  );
+    );
+  }
 };
 
 export default Companies;
