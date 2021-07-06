@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <Navbar className={styles.navbar}>
       <Container className="d-flex justify-content-between">
-        <Link href="#">
+        <Link href="#" passHref>
           <motion.div
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.07}}
@@ -35,7 +35,7 @@ const Header = () => {
           <Image src={logo} alt="Sakari" width="160" height="45" />
         </motion.div>
 
-        <Link href="#">
+        <Link href="#" passHref>
           <motion.div
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.07}}
