@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styles from "./Text.module.scss";
 
-
 const wordDuration = 0.3;
 
 /*  Initial position */
@@ -19,6 +18,11 @@ const initialWord4X = 500;
 const initialWord4Y = 0;
 
 export const TextLeft = (props) => {
+  const animateTextWrapperLeft = () => ({
+    scale: [1, 1.3, 1],
+    transition: { duration: wordDuration, delay: props.delayWrapperLeft },
+  });
+
   const animateWord1 = () => ({
     translateX: 0,
     translateY: 0,
@@ -32,7 +36,10 @@ export const TextLeft = (props) => {
   });
 
   return (
-    <div className={styles.text_container}>
+    <motion.div
+      animate={animateTextWrapperLeft}
+      className={styles.text_container}
+    >
       <motion.div
         initial={{
           translateX: initialWord1X,
@@ -54,11 +61,16 @@ export const TextLeft = (props) => {
       >
         everyone
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
 export const TextRight = (props) => {
+  const animateTextWrapperRight = () => ({
+    scale: [1, 1.3, 1],
+    transition: { duration: wordDuration, delay: props.delayWrapperRight },
+  });
+
   const animateWord3 = () => ({
     translateX: 0,
     translateY: 0,
@@ -72,7 +84,10 @@ export const TextRight = (props) => {
   });
 
   return (
-    <div className={styles.text_container}>
+    <motion.div
+      animate={animateTextWrapperRight}
+      className={styles.text_container}
+    >
       <motion.div
         initial={{
           translateX: initialWord3X,
@@ -93,6 +108,6 @@ export const TextRight = (props) => {
       >
         everything
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
