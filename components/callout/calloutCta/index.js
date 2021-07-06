@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { RiArrowRightSFill } from "react-icons/ri";
 import styles from "./CalloutCta.module.scss";
 
 const CalloutCta = () => {
@@ -29,6 +30,7 @@ const CalloutCta = () => {
           className={styles.button}
         >
           Get started free
+          <RiArrowRightSFill size="1.5em" />
         </motion.div>
       </div>
     </>

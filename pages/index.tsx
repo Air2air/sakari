@@ -17,7 +17,7 @@ export default function Home() {
 
       <Callout />
 
-      <footer className={styles.footer}>Callouts, Footer etc down here</footer>
+      <footer className={styles.footer}>Haven't done the mobile views.  Callouts, Footer etc down here</footer>
     </>
   );
 }
