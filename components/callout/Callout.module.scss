@@ -1,10 +1,26 @@
-.callout {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 300px;
+$callout-height: 500px;
+
+.callout_wrapper {
+  position: relative;
+  top: 0;
+  height: $callout-height;
+  width:100%;
+  .callout_animation {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    height: $callout-height;
+    width:100%;
+  }
 }
 
-// .callout {
-//   background-color: red;
-// }
+.callout_wrapper {
+  // background: red;
+  .callout_animation div div {
+    // background: gold;
+  }
+  .callout_cta {
+    background: blue;
+  }
+}

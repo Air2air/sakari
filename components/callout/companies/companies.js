@@ -27,79 +27,6 @@ const Companies = (props) => {
         <div className={styles.company_container}>
           <motion.div
             initial={{ scale: initialScale }}
-            custom={1}
-            animate={controls}
-            className={styles.company_1}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={2}
-            animate={controls}
-            className={styles.company_2}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={3}
-            animate={controls}
-            className={styles.company_3}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={4}
-            animate={controls}
-            className={styles.company_4}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={5}
-            animate={controls}
-            className={styles.company_5}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={6}
-            animate={controls}
-            className={styles.company_6}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={7}
-            animate={controls}
-            className={styles.company_7}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={8}
-            animate={controls}
-            className={styles.company_8}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={9}
-            animate={controls}
-            className={styles.company_9}
-          />
-
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={10}
-            animate={controls}
-            className={styles.company_10}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={11}
-            animate={controls}
-            className={styles.company_11}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={12}
-            animate={controls}
-            className={styles.company_12}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
             custom={13}
             animate={controls}
             className={styles.company_13}
@@ -116,12 +43,28 @@ const Companies = (props) => {
             animate={controls}
             className={styles.company_15}
           />
+
           <motion.div
             initial={{ scale: initialScale }}
-            custom={16}
+            custom={22}
             animate={controls}
-            className={styles.company_16}
+            className={styles.company_22}
           />
+
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={24}
+            animate={controls}
+            className={styles.company_24}
+          />
+
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={11}
+            animate={controls}
+            className={styles.company_11}
+          />
+
           <motion.div
             initial={{ scale: initialScale }}
             custom={17}
@@ -134,12 +77,93 @@ const Companies = (props) => {
             animate={controls}
             className={styles.company_18}
           />
+
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={23}
+            animate={controls}
+            className={styles.company_23}
+          />
+
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={7}
+            animate={controls}
+            className={styles.company_7}
+          />
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={8}
+            animate={controls}
+            className={styles.company_8}
+          />
+
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={5}
+            animate={controls}
+            className={styles.company_5}
+          />
+
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={16}
+            animate={controls}
+            className={styles.company_16}
+          />
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={9}
+            animate={controls}
+            className={styles.company_9}
+          />
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={10}
+            animate={controls}
+            className={styles.company_10}
+          />
+
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={12}
+            animate={controls}
+            className={styles.company_12}
+          />
+
           <motion.div
             initial={{ scale: initialScale }}
             custom={19}
             animate={controls}
             className={styles.company_19}
           />
+
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={21}
+            animate={controls}
+            className={styles.company_21}
+          />
+
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={1}
+            animate={controls}
+            className={styles.company_1}
+          />
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={2}
+            animate={controls}
+            className={styles.company_2}
+          />
+          <motion.div
+            initial={{ scale: initialScale }}
+            custom={3}
+            animate={controls}
+            className={styles.company_3}
+          />
+
           <motion.div
             initial={{ scale: initialScale }}
             custom={20}
@@ -148,27 +172,16 @@ const Companies = (props) => {
           />
           <motion.div
             initial={{ scale: initialScale }}
-            custom={21}
+            custom={4}
             animate={controls}
-            className={styles.company_21}
+            className={styles.company_4}
           />
+
           <motion.div
             initial={{ scale: initialScale }}
-            custom={22}
+            custom={6}
             animate={controls}
-            className={styles.company_22}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={23}
-            animate={controls}
-            className={styles.company_23}
-          />
-          <motion.div
-            initial={{ scale: initialScale }}
-            custom={24}
-            animate={controls}
-            className={styles.company_24}
+            className={styles.company_6}
           />
         </div>
       </>

@@ -12,9 +12,9 @@ const initialWord2X = 0;
 const initialWord2Y = -500;
 
 const initialWord3X = 0;
-const initialWord3Y = -500;
+const initialWord3Y = -900;
 
-const initialWord4X = 500;
+const initialWord4X = 900;
 const initialWord4Y = 0;
 
 export const TextLeft = (props) => {
