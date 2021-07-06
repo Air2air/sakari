@@ -8,7 +8,6 @@ import logo from "./../../public/logo/sakari-logo.png";
 import { motion } from "framer-motion";
 import styles from "./Header.module.scss";
 
-const initialOpacity = 0.6;
 const iconColor = "rgb(35, 134, 247)"
 
 const Header = () => {
@@ -32,7 +31,7 @@ const Header = () => {
           transition={{ duration: 0.15 }}
           className="d-flex align-items-center"
         >
-          <Image src="images/logo/sakari-logo.png" alt="Sakari" width="160" height="45" />
+          <Image src={logo} alt="Sakari" width="160" height="45" />
         </motion.div>
 
         <Link href="#" passHref>
