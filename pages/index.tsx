@@ -1,9 +1,9 @@
 
 import Head from "next/head";
 import Image from "next/image";
-import Header from "../components/header";
-import Callout from "../components/callout";
-import styles from "../styles/Home.module.scss";
+import Header from "./../components/header";
+import Callout from "./../components/callout";
+import styles from "./../styles/Home.module.scss";
 
 export default function Home() {
   return (
