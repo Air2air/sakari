@@ -1,0 +1,57 @@
+$people-size: 100px;
+
+.people_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  margin: 0 30px;
+  div {
+    width: $people-size;
+    height: $people-size;
+    background-size: 410%;
+    background-image: url(./../../../public/people/OJXLEK0.jpg);
+    &.people_1 {
+      background-position-x: 100px;
+      background-position-y: 100px;
+    }
+    &.people_2 {
+      background-position-x: 200px;
+      background-position-y: 200px;
+    }
+    &.people_3 {
+      background-position-x: 300px;
+      background-position-y: 300px;
+    }
+    &.people_4 {
+      background-position-x: 400px;
+      background-position-y: 400px;
+    }
+    &.people_5 {
+      background-position-x: 710px;
+      background-position-y: 810px;
+    }
+    &.people_6 {
+      background-position-x: 810px;
+      background-position-y: 920px;
+    }
+    &.people_7 {
+      background-position-x: 920px;
+      background-position-y: 1020px;
+    }
+    &.people_8 {
+      background-position-x: 1020px;
+      background-position-y: 1120px;
+    }
+    &.people_9 {
+      background-position-x: 1940px;
+      background-position-y: 1020px;
+    }
+  }
+}
+
+.people_container {
+  // background: gold;
+  div {
+  }
+}

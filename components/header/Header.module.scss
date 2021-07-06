@@ -1,0 +1,19 @@
+$navbar-height: 90px;
+
+nav.navbar {
+  height: $navbar-height;
+  margin: 0 0 30px 0;
+  .container {
+    height: $navbar-height;
+    a.nav-link {
+      font-weight: 300;
+      letter-spacing: 0.02em;
+      font-size: 1.1em;
+      text-decoration: none;
+    }
+  }
+}
+
+// nav.navbar {
+//   background: rgb(35, 134, 247)
+// }
