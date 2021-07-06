@@ -32,7 +32,7 @@ const Header = () => {
           transition={{ duration: 0.15 }}
           className="d-flex align-items-center"
         >
-          <Image src={logo} alt="Sakari" width="160" height="45" />
+          <Image src="/images/logo/sakari-logo.png" alt="Sakari" width="160" height="45" />
         </motion.div>
 
         <Link href="#" passHref>
