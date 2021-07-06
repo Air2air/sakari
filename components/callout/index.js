@@ -8,12 +8,12 @@ import styles from "./Callout.module.scss";
 
 const Callout = () => {
   const animateCalloutLeft = () => ({
-    translateX: -600,
+    translateX: -900,
     transition: { duration: 0.8, delay: 7, ease: "backInOut" },
   });
 
   const animateCalloutRight = () => ({
-    translateX: 600,
+    translateX: 900,
     transition: { duration: 0.8, delay: 7, ease: "backInOut" },
   });
 
@@ -29,7 +29,7 @@ const Callout = () => {
             animate={animateCalloutLeft}
             className="d-flex flex-column align-items-center w-50"
           >
-            <TextLeft animateCalloutLeft={3} delayWord1={1} delayWord2={1.5} />
+            <TextLeft delayWrapperLeft={3} delayWord1={1} delayWord2={1.5} />
             <People delay={1} />
           </motion.div>
           <motion.div
